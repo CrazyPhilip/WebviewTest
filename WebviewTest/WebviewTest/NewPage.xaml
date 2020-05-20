@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WebviewTest.NewPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stack">
+            <Label x:Name="label" Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="{Binding Path=FontSize,Source={x:Reference label},StringFormat='The FontSize of the above string is {0:F2}'}"/>
+            
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Love " FontSize="16"/>
+                        <Span Text="you! " FontSize="22"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

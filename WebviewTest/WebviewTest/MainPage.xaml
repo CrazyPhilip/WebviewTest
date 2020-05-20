@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xpt="clr-namespace:Xam.Plugin.TabView;assembly=Xam.Plugin.TabView"
+             xmlns:xtc="clr-namespace:Xam.TabView.Control;assembly=Xam.TabView"
+             xmlns:xt="clr-namespace:Xam.TabView;assembly=Xam.TabView"
+             mc:Ignorable="d"
+             x:Class="WebviewTest.MainPage">
+
+    <StackLayout VerticalOptions="Fill">
+        
+        <xpt:TabViewControl VerticalOptions="Fill" TabSizeOption="80" HeaderSelectionUnderlineWidth="20">
+            <xpt:TabViewControl.ItemSource>
+                <xpt:TabItem HeaderText="页面1">
+                    <StackLayout VerticalOptions="Fill">
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Love " FontSize="16"/>
+                                    <Span Text="you! " FontSize="22"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Entry Placeholder="验证码" HorizontalTextAlignment="Center" FontSize="20"/>
+                        <Button Text="openWeb" Clicked="Button_Clicked"/>
+
+                        <Button Text="NewPage" Clicked="Button_Clicked_1"/>
+                    </StackLayout>
+                </xpt:TabItem>
+
+                <xpt:TabItem HeaderText="页面2">
+                    <!--<WebView Source="https://editor.zgyvrqj.com/rotateview.aspx?rotate_id=115711" HeightRequest="200"/>-->
+                    <Label Text="你好！"/>
+                </xpt:TabItem>
+            </xpt:TabViewControl.ItemSource>
+        </xpt:TabViewControl>
+        
+<!--
+        <xtc:XFTabControl>
+            <xtc:XFTabControl.XFTabPages>
+                <xt:XFTabPage>
+                    <xt:XFTabPage.Header>
+                        <xt:XFTabHeader Title="Tab1"/>
+                    </xt:XFTabPage.Header>
+                    <xt:XFTabPage.CustomContentPage>
+                        <ContentPage>
+                            <StackLayout>
+                                <Label FontSize="16">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Fuck"/>
+                                            <Span Text="you! "/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Button Text="openWeb" Clicked="Button_Clicked"/>
+
+                                <Button Text="NewPage" Clicked="Button_Clicked_1"/>
+                            </StackLayout>
+                        </ContentPage>
+                    </xt:XFTabPage.CustomContentPage>
+                </xt:XFTabPage>
+
+                <xt:XFTabPage>
+                    <xt:XFTabPage.Header>
+                        <xt:XFTabHeader Title="Tab2">
+                        </xt:XFTabHeader>
+                    </xt:XFTabPage.Header>
+                    <xt:XFTabPage.CustomContentPage>
+                        <ContentPage>
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Fuck"/>
+                                        <Span Text="you too! "/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </ContentPage>
+                    </xt:XFTabPage.CustomContentPage>
+                </xt:XFTabPage>
+            </xtc:XFTabControl.XFTabPages>
+        </xtc:XFTabControl>-->
+        
+    </StackLayout>
+
+</ContentPage>
