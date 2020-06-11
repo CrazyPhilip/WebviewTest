@@ -21,5 +21,10 @@ namespace WebviewTest
             var displayMetrics = Android.Content.Res.Resources.System.DisplayMetrics;
 
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopModalAsync();
+        }
     }
 }

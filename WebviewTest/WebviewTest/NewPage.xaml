@@ -6,21 +6,24 @@
              mc:Ignorable="d"
              x:Class="WebviewTest.NewPage">
     <ContentPage.Content>
-        <StackLayout x:Name="stack">
+        <StackLayout x:Name="stack" VerticalOptions="Center">
             <Label x:Name="label" Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Label Text="{Binding Path=FontSize,Source={x:Reference label},StringFormat='The FontSize of the above string is {0:F2}'}"/>
+            <Label Text="{Binding Path=FontSize,Source={x:Reference label},StringFormat='The FontSize of the above string is {0:F2}'}"
+                   HorizontalOptions="Center"/>
             
-            <Label>
+            <Label VerticalOptions="Center" BackgroundColor="Blue">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Love " FontSize="16"/>
-                        <Span Text="you! " FontSize="22"/>
+                        <Span Text="Love " FontSize="20" TextColor="White"/>
+                        <Span Text="you! " FontSize="26" TextColor="Red"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
+
+            <Button Text="Go Back!" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

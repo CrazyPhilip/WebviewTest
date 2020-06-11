@@ -9,83 +9,11 @@
              mc:Ignorable="d"
              x:Class="WebviewTest.MainPage">
 
-    <StackLayout VerticalOptions="Fill">
-        
-        <xpt:TabViewControl VerticalOptions="Fill" TabSizeOption="80" HeaderSelectionUnderlineWidth="20">
-            <xpt:TabViewControl.ItemSource>
-                <xpt:TabItem HeaderText="页面1">
-                    <StackLayout VerticalOptions="Fill">
-                        <Label>
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Love " FontSize="16"/>
-                                    <Span Text="you! " FontSize="22"/>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
+    <StackLayout VerticalOptions="Center">
+        <Button Text="1 New Page" Clicked="Button_Clicked_1"/>
 
-                        <Entry Placeholder="验证码" HorizontalTextAlignment="Center" FontSize="20"/>
-                        <Button Text="openWeb" Clicked="Button_Clicked"/>
+        <Button Text="2 open Web" Clicked="Button_Clicked"/>
 
-                        <Button Text="NewPage" Clicked="Button_Clicked_1"/>
-                    </StackLayout>
-                </xpt:TabItem>
-
-                <xpt:TabItem HeaderText="页面2">
-                    <!--<WebView Source="https://editor.zgyvrqj.com/rotateview.aspx?rotate_id=115711" HeightRequest="200"/>-->
-                    <Label Text="你好！"/>
-                </xpt:TabItem>
-            </xpt:TabViewControl.ItemSource>
-        </xpt:TabViewControl>
-        
-<!--
-        <xtc:XFTabControl>
-            <xtc:XFTabControl.XFTabPages>
-                <xt:XFTabPage>
-                    <xt:XFTabPage.Header>
-                        <xt:XFTabHeader Title="Tab1"/>
-                    </xt:XFTabPage.Header>
-                    <xt:XFTabPage.CustomContentPage>
-                        <ContentPage>
-                            <StackLayout>
-                                <Label FontSize="16">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Fuck"/>
-                                            <Span Text="you! "/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                                <Button Text="openWeb" Clicked="Button_Clicked"/>
-
-                                <Button Text="NewPage" Clicked="Button_Clicked_1"/>
-                            </StackLayout>
-                        </ContentPage>
-                    </xt:XFTabPage.CustomContentPage>
-                </xt:XFTabPage>
-
-                <xt:XFTabPage>
-                    <xt:XFTabPage.Header>
-                        <xt:XFTabHeader Title="Tab2">
-                        </xt:XFTabHeader>
-                    </xt:XFTabPage.Header>
-                    <xt:XFTabPage.CustomContentPage>
-                        <ContentPage>
-                            <Label FontSize="16">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span Text="Fuck"/>
-                                        <Span Text="you too! "/>
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                        </ContentPage>
-                    </xt:XFTabPage.CustomContentPage>
-                </xt:XFTabPage>
-            </xtc:XFTabControl.XFTabPages>
-        </xtc:XFTabControl>-->
-        
     </StackLayout>
 
 </ContentPage>

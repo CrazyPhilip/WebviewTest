@@ -7,7 +7,7 @@
              x:Class="WebviewTest.WebPage">
     <ContentPage.Content>
         <StackLayout>
-            <WebView Source="https://editor.zgyvrqj.com/rotateview.aspx?rotate_id=115711" HeightRequest="400" VerticalOptions="Fill" HorizontalOptions="Fill"/>
+            <WebView Source="http://www.qq.com/" HeightRequest="400" VerticalOptions="Fill" HorizontalOptions="Fill"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
